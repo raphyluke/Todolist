@@ -12,7 +12,7 @@ class Todo extends React.Component {
     }
     render() {
         return (
-        <div className="flex w-full rounded-2xl bg-[#031955] h-14 w-[82%]">
+        <div className="flex rounded-2xl bg-[#031955] h-14 w-[86%]">
             <div onClick={this.changeValid} className=" z-10 flex items-center text-white pl-4 ">
                 {this.props.valid ? <img width={"30px"} src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/344/external-check-multimedia-kiranshastry-lineal-color-kiranshastry.png" /> : <img width={"30px"} src="https://img.icons8.com/color/344/circled.png"/>}
             </div>
