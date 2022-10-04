@@ -11,7 +11,7 @@ const todoSlice = createSlice({
             state.todoList.push(action.payload)
         },
         removeTodo: (state, action) => {
-            state.todoList = state.todoList.filter((todo) => todo.id !== action.payload)
+            state.todoList.splice(action.payload, 1)
         },
         changeValid: (state, action) => {
             state.todoList[action.payload].valid = !state.todoList[action.payload].valid

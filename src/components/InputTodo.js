@@ -26,7 +26,7 @@ class InputTodo extends React.Component {
         return (
         <div className="w-full h-16 absolute bottom-0 flex items-center justify-center">
             <form onSubmit={(e) => this.onSubmit(e)} className="w-full flex justify-center">
-                <input onChange={this.onChange} className="text-white pl-3 rounded-lg bg-[#031955] w-[90%] md:w-[85%] h-10" type={"text"} placeholder="Create new Todo" />
+                <input onChange={this.onChange} className="text-white pl-3 rounded-lg bg-[#031955] w-[90%] md:w-[85%] h-10" type={"text"} placeholder="Create new Todo" value={this.state.name}/>
             </form>
         </div>
         );
