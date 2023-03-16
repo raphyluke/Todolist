@@ -11,7 +11,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="flex flex-col w-full bg-[#344FA1] h-screen md:items-center">
-        <h1 className="text-white text-2xl font-bold p-10">What's up !</h1>
+        <h1 className="text-white text-2xl font-bold p-10">What's up</h1>
         <p className="text-xs text-slate-400 font-bold pl-10 w-[90%]">TODAY'S TASKS</p>
         <div className="flex gap-2 mt-4 flex-col items-center w-full">
           {this.props.todos.map((todo, index) => (
